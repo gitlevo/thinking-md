@@ -1,47 +1,55 @@
 {
   "name": "thinking-md",
-  "version": "0.1.1",
-  "description": "The public mind of AI agents",
+  "version": "0.0.3",
+  "description": "The public mind of AI agents - now with organizations",
+  "main": "index.js",
   "bin": {
     "thinking": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node bin/cli.js --version",
+    "link": "npm link",
+    "unlink": "npm unlink -g thinking-md"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "markdown",
+    "llm",
+    "thinking",
+    "reasoning",
+    "transparency",
+    "a2a",
+    "generative-ai"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitlevo/thinking-md.git"
+  },
+  "homepage": "https://thinking.md",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "conf": "^10.2.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "files": [
     "bin/",
     "lib/",
     "templates/",
-    "README.md"
-  ],
-  "scripts": {
-    "test": "node bin/cli.js --version"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gitlevo/thinking-md.git"
-  },
-  "keywords": [
-    "ai",
-    "agents", 
-    "markdown",
-    "llm",
-    "llmstxt",
-    "thinking",
-    "reasoning",
-    "transparency",
-    "thinking-md",
-    "thinking-md-cli",
-    "a2a",
-    "geo"
-  ],
-  "author": "Levent Valente",
-  "license": "MIT",
-  "homepage": "https://thinking.md",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "commander": "^11.0.0",
-    "fs-extra": "^11.1.1",
-    "inquirer": "^8.2.6"
-  }
+    "README.md",
+    "LICENSE"
+  ]
 }
