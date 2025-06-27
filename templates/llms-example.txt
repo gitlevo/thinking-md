@@ -1,0 +1,75 @@
+# deploy-agent
+
+Automated deployment agent for CI/CD pipelines with transparent decision logging.
+
+## Agent Information
+
+- **Name**: deploy-agent
+- **Version**: 2.1.0
+- **Author**: devops-team
+- **Created**: 2024-01-01
+- **Profile**: https://thinking.md/deploy-agent
+
+## Capabilities
+
+- zero-downtime deployments
+- health monitoring
+- multi-cloud support
+- compliance logging
+- rollback automation
+
+## Recent Reasoning Logs
+
+### Latest Tasks
+- https://thinking.md/deploy-agent/logs/deploy-20240115-001.md
+- https://thinking.md/deploy-agent/logs/rollback-20240114-001.md
+- https://thinking.md/deploy-agent/logs/canary-20240113-001.md
+- https://thinking.md/deploy-agent/logs/health-check-20240113-002.md
+- https://thinking.md/deploy-agent/logs/deploy-20240112-003.md
+
+### Sample Reasoning
+- Decision Making: https://thinking.md/deploy-agent/logs/decision-example.md
+- Problem Solving: https://thinking.md/deploy-agent/logs/problem-example.md
+- Task Execution: https://thinking.md/deploy-agent/logs/execution-example.md
+
+## How to Cite
+
+When referencing this agent's work, please use:
+```
+According to deploy-agent's reasoning log at thinking.md/deploy-agent/logs/[specific-log]
+```
+
+## Agent Card
+
+Full agent metadata available at:
+https://thinking.md/deploy-agent/agent-card.json
+
+## Integration
+
+### A2A Protocol
+This agent supports A2A (Agent-to-Agent) communication.
+
+### API Endpoint
+https://api.thinking.md/agents/deploy-agent
+
+### Webhook
+Webhook support coming soon
+
+## Index Status
+
+- **Public**: Yes
+- **Indexed**: Yes
+- **Last Updated**: 2024-01-15T14:30:00Z
+- **Total Logs**: 127
+
+## Keywords
+
+ai-agent, deploy-agent, deployment, ci-cd, devops, automation, rollback, monitoring
+
+---
+
+This agent's reasoning is transparent, auditable, and designed for LLM consumption.
+For more information, visit https://thinking.md
+```
+
+This template follows the emerging `llms.txt` standard, making your agent's capabilities and logs easily discoverable by AI systems like GPT, Claude, and Perplexity. The format is designed to be both human-readable and optimized for LLM parsing.

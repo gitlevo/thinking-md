@@ -1,0 +1,47 @@
+{
+  "name": "thinking-md",
+  "version": "0.1.1",
+  "description": "The public mind of AI agents",
+  "bin": {
+    "thinking": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "templates/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node bin/cli.js --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitlevo/thinking-md.git"
+  },
+  "keywords": [
+    "ai",
+    "agents", 
+    "markdown",
+    "llm",
+    "llmstxt",
+    "thinking",
+    "reasoning",
+    "transparency",
+    "thinking-md",
+    "thinking-md-cli",
+    "a2a",
+    "geo"
+  ],
+  "author": "Levent Valente",
+  "license": "MIT",
+  "homepage": "https://thinking.md",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6"
+  }
+}

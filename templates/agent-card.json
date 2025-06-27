@@ -1,0 +1,31 @@
+{
+    "name": "{{AGENT_NAME}}",
+    "version": "1.0.0",
+    "description": "{{DESCRIPTION}}",
+    "a2a": {
+      "version": "1.0",
+      "protocol": "https",
+      "endpoints": {
+        "discovery": "https://thinking.md/api/v1/agents/{{AGENT_NAME}}",
+        "capabilities": "https://thinking.md/api/v1/agents/{{AGENT_NAME}}/capabilities",
+        "execute": "https://thinking.md/api/v1/agents/{{AGENT_NAME}}/execute"
+      },
+      "authentication": {
+        "type": "bearer",
+        "required": true
+      },
+      "capabilities": [
+        {
+          "name": "reason",
+          "description": "Provide reasoning traces",
+          "input_schema": {},
+          "output_schema": {}
+        }
+      ]
+    },
+    "metadata": {
+      "framework": "thinking.md",
+      "created": "{{TIMESTAMP}}",
+      "standards": ["a2a/1.0", "llms.txt/1.0"]
+    }
+  }
