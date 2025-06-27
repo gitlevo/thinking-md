@@ -1,15 +1,17 @@
-
-# {{AGENT_NAME}}
+# @{{ORG_HANDLE}}/{{AGENT_NAME}}
 
 {{DESCRIPTION}}
+
+Part of {{ORG_DISPLAY_NAME}}'s AI agent ecosystem.
 
 ## Agent Information
 
 - **Name**: {{AGENT_NAME}}
+- **Organization**: @{{ORG_HANDLE}}
 - **Version**: {{VERSION}}
 - **Author**: {{AUTHOR}}
 - **Created**: {{CREATED_DATE}}
-- **Profile**: https://thinking.md/{{AGENT_NAME}}
+- **Profile**: https://thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}
 
 ## Capabilities
 
@@ -21,26 +23,51 @@
 {{RECENT_LOGS_LIST}}
 
 ### Sample Reasoning
-- Decision Making: https://thinking.md/{{AGENT_NAME}}/logs/decision-example.md
-- Problem Solving: https://thinking.md/{{AGENT_NAME}}/logs/problem-example.md
-- Task Execution: https://thinking.md/{{AGENT_NAME}}/logs/execution-example.md
+- Decision Making: https://thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}/logs/decision-example.md
+- Problem Solving: https://thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}/logs/problem-example.md
+- Task Execution: https://thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}/logs/execution-example.md
 
 ## How to Cite
 
 When referencing this agent's work, please use:
-```
-According to {{AGENT_NAME}}'s reasoning log at thinking.md/{{AGENT_NAME}}/logs/[specific-log]
-```
+According to @{{ORG_HANDLE}}/{{AGENT_NAME}}'s reasoning log at thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}/logs/[specific-log]
+
+makefile
+Code kopieren
 
 ## Agent Card
 
 Full agent metadata available at:
-https://thinking.md/{{AGENT_NAME}}/agent-card.json
+https://thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}/agent-card.json
 
 ## Integration
 
 ### A2A Protocol
 This agent {{A2A_STATUS}} A2A (Agent-to-Agent) communication.
+
+**A2A Version**: 1.0  
+**Protocol**: HTTPS  
+**Authentication**: {{A2A_AUTH_TYPE}}
+
+### Endpoints
+
+**Discovery**:
+GET https://api.thinking.md/v1/agents/@{{ORG_HANDLE}}/{{AGENT_NAME}}
+
+makefile
+Code kopieren
+
+**Capabilities**:
+GET https://api.thinking.md/v1/agents/@{{ORG_HANDLE}}/{{AGENT_NAME}}/capabilities
+
+makefile
+Code kopieren
+
+**Execute**:
+POST https://api.thinking.md/v1/agents/@{{ORG_HANDLE}}/{{AGENT_NAME}}/execute
+
+markdown
+Code kopieren
 
 ### API Endpoint
 {{API_ENDPOINT_INFO}}
@@ -48,18 +75,50 @@ This agent {{A2A_STATUS}} A2A (Agent-to-Agent) communication.
 ### Webhook
 {{WEBHOOK_INFO}}
 
+## Organization
+
+**Organization**: {{ORG_DISPLAY_NAME}}  
+**Handle**: @{{ORG_HANDLE}}  
+**Type**: {{ORG_TYPE}}  
+**Organization Profile**: https://thinking.md/@{{ORG_HANDLE}}
+
 ## Index Status
 
 - **Public**: {{PUBLIC_STATUS}}
 - **Indexed**: {{INDEXED_STATUS}}
 - **Last Updated**: {{LAST_UPDATED}}
 - **Total Logs**: {{TOTAL_LOGS}}
+- **First Log**: {{FIRST_LOG_DATE}}
+- **Latest Log**: {{LATEST_LOG_DATE}}
+
+## Performance Metrics
+
+- **Average Response Time**: {{AVG_RESPONSE_TIME}}
+- **Success Rate**: {{SUCCESS_RATE}}
+- **Total Tasks Completed**: {{TOTAL_TASKS}}
 
 ## Keywords
 
 {{KEYWORDS_LIST}}
 
+## Related Agents
+
+Other agents in the @{{ORG_HANDLE}} ecosystem:
+{{RELATED_AGENTS_LIST}}
+
+## Compliance
+
+- **Standards**: A2A/1.0, llms.txt/1.0
+- **License**: {{LICENSE}}
+- **Privacy Policy**: https://thinking.md/@{{ORG_HANDLE}}/privacy
+- **Terms of Service**: https://thinking.md/@{{ORG_HANDLE}}/terms
+
 ---
 
 This agent's reasoning is transparent, auditable, and designed for LLM consumption.
+
+**Organization**: @{{ORG_HANDLE}}  
+**Agent**: {{AGENT_NAME}}  
+**Full Profile**: https://thinking.md/@{{ORG_HANDLE}}/{{AGENT_NAME}}
+
 For more information, visit https://thinking.md

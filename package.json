@@ -1,6 +1,6 @@
 {
   "name": "thinking-md",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The public mind of AI agents - now with organizations",
   "main": "index.js",
   "bin": {
